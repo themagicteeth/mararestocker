@@ -1,17 +1,25 @@
 <script>
-    export let shopName
-    export let shopId
-    export let imageUrl
+    export let shopName;
+    export let shopId;
+    export let imageUrl;
 
     function goToShop() {
-        window.open(`http://www.marapets.com/shop.php?id=${shopId}`, 'marapets')
+        window.open(
+            `http://www.marapets.com/shop.php?id=${shopId}`,
+            "marapets"
+        );
     }
 </script>
 
 <li>
-    <a href="http://www.marapets.com/shop.php?id={shopId}" target="_blank" title="Go to {shopName} shop" on:click|preventDefault={goToShop}>
+    <a
+        href="http://www.marapets.com/shop.php?id={shopId}"
+        target="_blank"
+        title="Go to {shopName} shop"
+        on:click|preventDefault={goToShop}
+    >
         <figure>
-            <img src="{imageUrl}" alt="{shopName} shop">
+            <img src={imageUrl} alt="{shopName} shop" />
             <figcaption>{shopName}</figcaption>
         </figure>
     </a>

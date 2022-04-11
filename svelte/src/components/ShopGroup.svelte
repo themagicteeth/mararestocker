@@ -1,8 +1,8 @@
 <article>
-    <slot name="toggle"></slot>
+    <slot name="toggle" />
     <section>
         <ul>
-            <slot></slot>
+            <slot />
         </ul>
     </section>
 </article>
