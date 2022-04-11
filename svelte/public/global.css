@@ -1,0 +1,9 @@
+html {
+    font-size: 1vw; 
+}
+
+body {
+    font-family: verdana, arial, helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+}
